@@ -1,0 +1,15 @@
+.head{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    z-index: 1;
+
+    img{
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        width: 60rem;
+        z-index: -1;
+    }
+}

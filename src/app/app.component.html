@@ -1,0 +1,75 @@
+
+<nav class="nav fix-nav">
+  <div class="navigation container">
+    <div class="logo">
+      <h1>{{name}}<span>.</span></h1>
+    </div>
+
+    <div class="menu">
+      <div class="top-nav">
+        <div class="logo">
+          <h1>{{name}}<span>.</span></h1>
+        </div>
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <ul class="nav-list">
+        <li class="nav-item" (click)="navigatToSection(home);">
+          <a href="#home" class="nav-link scroll-link">Home</a>
+        </li>
+        <li class="nav-item" (click)="navigatToSection(about);">
+          <a href="#about" class="nav-link scroll-link">About</a>
+        </li>
+        <li class="nav-item" (click)="navigatToSection(services);">
+          <a href="#services" class="nav-link scroll-link">Services</a>
+        </li>
+        <li class="nav-item" (click)="navigatToSection(skills);">
+          <a href="#skills" class="nav-link scroll-link">Skills</a>
+        </li>
+        <li class="nav-item" (click)="navigatToSection(teams);">
+          <a href="#teams" class="nav-link scroll-link">Teams</a>
+        </li>
+        <li class="nav-item" (click)="navigatToSection(contacts);">
+          <a href="#contact" class="nav-link scroll-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+  
+  <section id="home" #home>
+    <app-home (redirectToContact)="redirectToContact()"></app-home>
+  </section>
+
+  <section id="about" #about>
+    <app-about></app-about>
+  </section>
+
+  <section id="services" #services>
+    <app-services></app-services> 
+  </section>
+
+  <section id="skills" #skills>
+    <app-skills></app-skills>
+  </section>
+
+  <section id="teams" #teams>
+    <app-teams></app-teams>
+  </section>
+
+  <section id="contacts" #contacts>
+    <app-contacts></app-contacts>
+  </section>
+  
+  <div class="footer">
+    <p><span>Lok Priya Sagar</span> | &copy; {{currentYear}} All rights reserved.</p>
+  </div>
+
+ 
+
